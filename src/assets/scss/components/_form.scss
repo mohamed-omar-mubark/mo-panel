@@ -1,0 +1,36 @@
+/*=====
+Forms Styles
+=====*/
+
+form.main-form {
+  .form-group {
+    label.input-name {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--dark-color);
+      margin-bottom: 0.5rem;
+    }
+    
+    input.form-control {
+      padding: 10px;
+      border: 1px solid #ced4da;
+      font-size: 0.8125rem;
+      font-weight: 400;
+      color: var(--dark-color);
+      transition: 0.3s;
+      &:focus {
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+      }
+      &::placeholder {
+        color: var(--secondary-color);
+      }
+
+      &.w-350 {
+        width: 350px;
+      }
+      &.w-400 {
+        width: 400px;
+      }
+    }
+  }
+}

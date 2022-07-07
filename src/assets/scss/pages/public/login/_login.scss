@@ -1,0 +1,144 @@
+/* =====
+Login
+===== */
+
+.login {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-height: 100vh;
+
+  .top {
+    position: relative;
+    height: 40%;
+    background-image: url('../../assets/images/pages/login/login-bg-1.jpg');
+    background-size: cover;
+    background-position: center;
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, rgba(54, 69, 116), rgba(64, 81, 137));
+      opacity: 0.9;
+    }
+    
+    .bg-particles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .bottom {
+    position: relative;
+    height: 60%;
+    background-color: #f3f3f9;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 50%;
+      height: 200px;
+      top: -55px;
+      left: 0;
+      background-color: #f3f3f9;
+      transform: skewY(8deg);
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 50%;
+      height: 200px;
+      top: -55px;
+      right: 0;
+      background-color: #f3f3f9;
+      transform: skewY(-8deg);
+    }
+
+    .content {
+      position: relative;
+      margin: -250px 0 20px;
+      
+      .head {
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 40px;
+
+        h1 {
+          font-size: 2rem;
+          font-weight: 600;
+          color: #fff;
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: 1rem;
+          font-weight: 500;
+          color: var(--secondary-color);
+        }
+      }
+
+      .login-form {
+        background-color: #fff;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+        width: 450px;
+        padding: 1.5rem;
+        margin: 0 auto;
+        border-radius: 4px;
+        position: relative;
+        z-index: 1;
+        
+        @media (max-width: 575px) {
+          width: 95%;
+        }
+
+        .form-head {
+          text-align: center;
+
+          .title {
+            display: block;
+            font-size: 1.015rem;
+            font-weight: 500;
+            color: var(--main-color);
+            margin-bottom: 0.5rem;
+          }
+
+          p {
+            font-size: 0.875rem;
+            font-weight: 400;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+
+    .copyright {
+      text-align: center;
+
+      p {
+        font-size: 0.8125rem;
+        font-weight: 400;
+        color: var(--secondary-color);
+
+        a {
+          font-size: 0.9rem;
+          font-weight: 500;
+          color: var(--main-color);
+          opacity: 0.8;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

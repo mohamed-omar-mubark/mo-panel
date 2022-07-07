@@ -6,7 +6,7 @@
 ## Description
 ```
 Mo Panel is an admin dashboard template built with Bootstrap v5.1.3, Vue 3.
- You can build any type of web application like eCommerce, CRM, CMS, project management apps, admin panels etc using Mo Panel.
+ You can build any type of web application like eCommerce, admin panels etc using Mo Panel.
 ```
 
 ### What is Mo Panel?
@@ -16,7 +16,7 @@ Mo Panel is an admin dashboard template.
 
 ### Why should I use Mo Panel?
 ```
-You can build any type of web application like eCommerce, CRM, CMS, project management apps, admin panels etc using Mo Panel.
+You can build any type of web application like eCommerce, admin panels etc using Mo Panel.
 ```
 
 ## Project setup

@@ -1,30 +1,47 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <div id="app">
+    <!-- PreLoading -->
+    <PreLoading />
+    <!-- app views -->
+    <router-view />
+    <!-- notification -->
+    <notifications position="bottom right" />
+  </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+// PreLoading component
+import PreLoading from '@/components/preloading/PreLoading.vue';
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+export default {
+  components: {
+    PreLoading
+  },
+  mounted() {
+    // define app
+    let myApp = document.querySelector("#app");
+    // define app languages
+    let langs = ['en', 'ar'];
+    // define current app language
+    let lang = localStorage.lang;
+    // if localStorage lang is set and it is a valid language
+    if(!lang || lang === '' || !langs.includes(lang)) {
+      // set default language
+      localStorage.setItem('lang', 'en');
+      // reload page
+      this.$router.go(this.$router.currentRoute);
+    }
+    // if localStorage lang is a valid language
+    if(langs.includes(lang)) {
+      // set the language
+      if(lang === 'en') {
+        myApp.style.direction = "ltr";
+        myApp.style.fontFamily = "'Poppins', sans-serif";
+      }
+      if(lang === 'ar') {
+        myApp.classList.add('arabic-style');
+      }
     }
   }
 }
-</style>
+</script>
