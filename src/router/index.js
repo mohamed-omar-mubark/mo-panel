@@ -20,7 +20,15 @@ const routes = [
   {
     path: "/dashboard",
     name: "Dashboard",
-    component: () => import("@/views/auth/Dashboard.vue")
+    component: () => import("@/views/auth/dashboard/Dashboard.vue"),
+    children: [
+      // Dashboard/Overview
+      {
+        path: "overview",
+        name: "Overview",
+        component: () => import("@/views/auth/dashboard/dashboard-views/Overview.vue")
+      }
+    ]
   },
 ];
 

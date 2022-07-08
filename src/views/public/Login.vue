@@ -122,8 +122,8 @@ export default {
       if (this.loginData.email && this.loginData.password) {
         // success message
         this.$notify({ type: 'success', text: 'Successful Login' });
-        // redirect to dashboard
-        this.$router.push({ name: 'Dashboard' });
+        // redirect to dashboard overview
+        this.$router.push({ name: 'Overview' });
       }
     }
   }

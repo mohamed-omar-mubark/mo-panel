@@ -1,12 +1,12 @@
 <template>
-  <section class='dashboard'>
-    Dashboard
-  </section>
+  <main class='dashboard-overview'>
+    Overview
+  </main>
 </template>
 
 <script>
 export default {
-  name: 'Dashboard',
+  name: 'Overview',
 };
 </script>
 
