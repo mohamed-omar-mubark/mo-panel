@@ -1,7 +1,7 @@
 # Mo Panel
 
 ### Screenshot
-![Mo Panel screenshot](src/assets/images/screenshots/mo-panel.png)
+<!-- ![Mo Panel screenshot](src/assets/images/screenshots/mo-panel.png) -->
 
 ## Description
 ```

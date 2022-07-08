@@ -9,6 +9,13 @@ reset helper
   margin: 0;
 }
 html {
+  // english style 
+  .english-style {
+    direction: ltr;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  // body
   body {
     scroll-behavior: smooth;
 
