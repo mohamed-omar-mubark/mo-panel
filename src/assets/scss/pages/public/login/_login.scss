@@ -99,6 +99,27 @@ Login
           width: 95%;
         }
 
+        .change-language {
+          text-align: end;
+
+          select {
+            padding: 2px 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: .8rem;
+            font-weight: 500;
+            color: var(--main-color);
+
+            &:focus {
+              border: 1px solid #ddd;
+            }
+
+            &:focus-visible {
+              border: 1px solid #ddd;
+            }
+          }
+        }
+
         .form-head {
           text-align: center;
 

@@ -24,6 +24,16 @@
           <p>{{ $t('premium_admin_dashboard') }}</p>
         </div>
         <div class="login-form">
+          <div class="change-language mb-2">
+            <select v-model="$i18n.locale" @change="changeLanguage($event)">
+              <option
+                v-for="langnguage in languages"
+                :key="langnguage"
+                :value="langnguage">
+                {{ langnguage }}
+              </option>
+            </select>
+          </div>
           <div class="form-head">
             <span class="title">{{ $t('welcome_message') }}</span>
             <p>{{ $t('sign_in_message') }}</p>
@@ -48,14 +58,6 @@
       <div class="copyright">
         <p>{{ $t('copyright') }} <a href="mailto:mohamed.omar.mubark@gmail.com">{{ $t('mohamed_omar') }}</a></p>
       </div>
-      <select v-model="$i18n.locale" @change="changeDirection($event)">
-        <option
-          v-for="langnguage in languages"
-          :key="langnguage"
-          :value="langnguage">
-          {{ langnguage }}
-        </option>
-      </select>
     </div>
   </main>
 </template>
@@ -73,14 +75,13 @@ export default {
 
       // languages
       languages: ['en', 'ar'],
-
-      // current language
-      currentLanguage: window.localStorage.currentLanguage,
     }
   },
   created() {
-    if (this.currentLanguage) {
-      this.$i18n.locale = this.currentLanguage
+    // if current language is set in local storage
+    if (window.localStorage.currentLanguage) {
+      // change i18n locale
+      this.$i18n.locale = window.localStorage.currentLanguage;
     }
   },
   mounted() {
@@ -92,25 +93,30 @@ export default {
     } else {
 
       // add class english-style to app
-      document.querySelector('#app').classList.remove('arabic-style');
+      document.querySelector('#app').classList.add('english-style');
     }
   },
   methods: {
-    // change page direction in language change
-    changeDirection(event) {
+    // change page language and direction
+    changeLanguage(event) {
       if(event.target.value === 'ar') {
         
         // add class arabic-style to app
         document.querySelector('#app').classList.add('arabic-style');
+        // remove class english-style from app
+        document.querySelector('#app').classList.remove('english-style');
       } else {
 
         // add class english-style to app
+        document.querySelector('#app').classList.add('english-style');
+        // remove class arabic-style from app
         document.querySelector('#app').classList.remove('arabic-style');
       }
       // set current language in local storage
-      window.localStorage.setItem('currentLanguage', event.target.value);
+      window.localStorage.setItem('currentLanguage', event.target.value); 
     },
 
+    // login
     login() {
       // if not empty loginData
       if (this.loginData.email && this.loginData.password) {
