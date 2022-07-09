@@ -1,15 +1,20 @@
 <template>
   <aside class='dashboard-sidebar'>
+    <!-- sidebar brand logo -->
     <div class="brand">
       <span>Mo Panel</span>
     </div>
 
+    <!-- sidebar main navbar -->
     <div class="sidebar-nav">
+      <!-- main menu -->
       <ul class="main-menu">
         <li class="category-name">
           <span>{{ $t('menu') }}</span>
         </li>
+        <!-- main menu item -->
         <li :class="$route.name === 'Overview' ? 'main-menu-item active' : 'main-menu-item'">
+          <!-- main menu link -->
           <div class="main-menu-link">
             <div class="content">
               <i class="fas fa-tachometer-alt"></i>
@@ -23,48 +28,18 @@
 
           <!-- submenu -->
           <ul class="submenu">
+            <!-- submenu item -->
             <li class="submenu-item">
+              <!-- submenu link -->
               <router-link :to="{ name: 'Overview' }" class="submenu-link">
                 <span class="text">{{ $t('analytics') }}</span>
               </router-link>
             </li>
 
+            <!-- submenu item -->
             <li class="submenu-item">
+              <!-- submenu link -->
               <router-link :to="{ name: 'Overview' }" :class="$route.name === 'Overview' ? 'submenu-link active' : 'submenu-link'">
-                <span class="text">{{ $t('ecommerce') }}</span>
-              </router-link>
-            </li>
-
-            <li class="submenu-item">
-              <router-link :to="{ name: 'Overview' }" class="submenu-link">
-                <span class="text">{{ $t('crm') }}</span>
-              </router-link>
-            </li>
-
-            <li class="submenu-item">
-              <router-link :to="{ name: 'Overview' }" class="submenu-link">
-                <span class="text">{{ $t('erb') }}</span>
-              </router-link>
-            </li>
-          </ul>
-        </li>
-
-        <li :class="$route.name === 'Dashboard' ? 'main-menu-item active' : 'main-menu-item'">
-          <div class="main-menu-link">
-            <div class="content">
-              <i class="fas fa-chart-line"></i>
-              <span class="text">{{ $t('analytics') }}</span>
-            </div>
-            <!-- arrow -->
-            <div class="arrow">
-              <i class="arrow fas fa-angle-right"></i>
-            </div>
-          </div>
-
-          <!-- submenu -->
-          <ul class="submenu">
-            <li class="submenu-item">
-              <router-link :to="{ name: 'Overview' }" :class="$route.name === 'Dashboard' ? 'submenu-link active' : 'submenu-link'">
                 <span class="text">{{ $t('ecommerce') }}</span>
               </router-link>
             </li>
@@ -79,7 +54,18 @@
 export default {
   name: 'Sidebar',
   mounted() {
-    
+    // add class active to current main menu item
+    this.$nextTick(() => {
+      const mainMenuItems = document.querySelectorAll('.main-menu-item');
+      mainMenuItems.forEach(item => {
+        item.addEventListener('click', () => {
+          mainMenuItems.forEach(item => {
+            item.classList.remove('active');
+          });
+          item.classList.add('active');
+        });
+      });
+    });
   }
 };
 </script>
@@ -91,9 +77,6 @@ export default {
     "menu": "Menu",
     "dashboard": "Dashboard",
     "ecommerce": "Ecommerce",
-    "analytics": "Analytics",
-    "crm": "CRM",
-    "erb": "ERB"
   },
 
   // arabic
@@ -101,9 +84,6 @@ export default {
     "menu": "القائمة",
     "dashboard": "لوحة التحكم",
     "ecommerce": "التجارة الإلكترونية",
-    "analytics": "التحليل",
-    "crm": "CRM",
-    "erb": "ERB"
   }
 }
 </i18n>

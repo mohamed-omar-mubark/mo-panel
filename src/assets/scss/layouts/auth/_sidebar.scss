@@ -27,7 +27,6 @@ Sidebar
       position: relative;
       height: 100% !important;
       overflow: auto;
-
       li {
         // category title
         &.category-name {
@@ -41,45 +40,44 @@ Sidebar
           }
         }
 
-        // menu item
+        // main menu item
         &.main-menu-item {
+          // main menu item in active state
           &.active {
+            // main menu link
             .main-menu-link {
               .content {
                 svg {
                   color: #fff;
                 }
-
                 .text {
                   color: #fff;
                 }
               }
-
               .arrow {
                 svg {
-                  color: #fff;
                   transform: rotate(90deg);
                 }
               }
             }
-
+            // sub menu
             ul.submenu {
               height: auto;
             }
           }
 
+          // main menu item in hover state
           &:hover {
+            // main menu link
             .main-menu-link {
               .content {
                 svg {
                   color: #fff;
                 }
-
                 .text {
                   color: #fff;
                 }
               }
-
               .arrow {
                 svg {
                   color: #fff;
@@ -88,6 +86,7 @@ Sidebar
             }
           }
 
+          // main menu link
           .main-menu-link {
             display: flex;
             justify-content: space-between;
@@ -96,19 +95,17 @@ Sidebar
             position: relative;
             padding: 12px 25px;
             cursor: pointer;
-            
+
             .content {
               display: flex;
               justify-content: start;
               align-items: center;
               gap: 10px;
-
               svg {
                 font-size: 18px;
                 color: #abb9e8;
                 transition: 0.3s;
               }
-
               .text {
                 font-size: 14px;
                 font-weight: 400;
@@ -116,7 +113,6 @@ Sidebar
                 transition: 0.3s;
               }
             }
-
             .arrow {
               svg {
                 font-size: 14px;
@@ -125,51 +121,50 @@ Sidebar
               }
             }
           }
-        }
 
-        // submenu
-        ul.submenu {
-          padding: 0 30px;
-          height: 0;
-          overflow: hidden;
-          transition: 0.3s;
+          // submenu
+          ul.submenu {
+            padding: 0 30px;
+            height: 0;
+            overflow: hidden;
+            transition: 0.3s;
 
-          li {
-            &.submenu-item {
-              padding: 10px 0;
-
-              .submenu-link {
-                position: relative;
-                padding-left: 20px;
-
-                &::before {
-                  position: absolute;
-                  content: '';
-                  top: 50%;
-                  transform: translateY(-50%);
-                  left: 0;
-                  width: 6px;
-                  height: 2px;
-                  background-color: #abb9e8;
-                }
-
-                &.active {
-                  .text {
-                    color: #fff;
+            li {
+              &.submenu-item {
+                padding: 10px 0;
+                .submenu-link {
+                  position: relative;
+                  padding-left: 20px;
+                  // submenu link icon
+                  &::before {
+                    position: absolute;
+                    content: '';
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    width: 6px;
+                    height: 2px;
+                    background-color: #abb9e8;
                   }
-                }
-
-                &:hover {
-                  .text {
-                    color: #fff;
+                  // submenu link in active state
+                  &.active {
+                    .text {
+                      color: #fff;
+                    }
                   }
-                }
+                  // submenu link in hover state
+                  &:hover {
+                    .text {
+                      color: #fff;
+                    }
+                  }
 
-                .text {
-                  font-size: 12px;
-                  font-weight: 400;
-                  color: #abb9e8;
-                  transition: 0.3s;
+                  .text {
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: #abb9e8;
+                    transition: 0.3s;
+                  }
                 }
               }
             }
