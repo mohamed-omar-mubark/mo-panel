@@ -6,7 +6,7 @@
     <!-- Sidebar -->
     <Sidebar />
     <!-- dashboard views -->
-    <router-view></router-view>
+    <router-view class="dashboard-views"></router-view>
   </main>
 </template>
 

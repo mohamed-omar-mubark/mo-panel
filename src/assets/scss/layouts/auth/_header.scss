@@ -5,12 +5,15 @@ Header
 .dashboard-header {
   position: fixed;
   top: 0;
-  left: 250px;
   right: 0;
   background-color: #fff;
   border-bottom: 1px solid #e1effd;
   transition: 0.3s;
   z-index: 999;
+  left: 70px;
+  @media (min-width: 768px) {
+    left: 250px;
+  }
   
   // sticky header
   &.sticky-header {

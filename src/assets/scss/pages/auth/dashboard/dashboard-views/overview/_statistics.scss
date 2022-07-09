@@ -1,0 +1,70 @@
+/* =====
+Statistics
+===== */
+
+.statistics {
+  .statistics-box {
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(109, 112, 115, 0.1);
+    transition: 0.3s;
+    &:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 5px 10px rgba(30, 32, 37, 12%);
+    }
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      margin-bottom: 1.5rem;
+
+      .name {
+        font-size: .8125rem;
+        font-weight: 500;
+        color: var(--secondary-color);
+        text-transform: uppercase;
+      }
+      .average {
+        font-size: .8125rem;
+        font-weight: 600;
+        color: var(--secondary-color);
+      }
+    }
+    .number {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: var(--main-color);
+    }
+    .actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      .link {
+        font-size: .8125rem;
+        font-weight: 500;
+        color: var(--secondary-color);
+        text-decoration: underline;
+        &:hover {
+          color: var(--main-color);
+        }
+      }
+
+      .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 40px;
+        height: 40px;
+        background-color: var(--success-bg);
+        color: var(--main-color);
+        border-radius: 4px;
+        font-size: 18px;
+      }
+    }
+  }
+}
