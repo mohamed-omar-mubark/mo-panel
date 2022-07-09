@@ -35,6 +35,21 @@
 <script>
 export default {
   name: 'Header',
+  mounted() {
+    // sticky header in scroll
+    // define header
+    let header = document.querySelector('.dashboard-header');
+    // if window scroll is greater than 0
+    window.onscroll = function() {
+      if (window.scrollY >= 1) {
+        // add class sticky-header to header
+        header.classList.add('sticky-header');
+      } else {
+        // remove class sticky-header from header
+        header.classList.remove('sticky-header');
+      }
+    };
+  }
 };
 </script>
 
