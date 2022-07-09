@@ -16,4 +16,55 @@ Header
     background-color: #fff;
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
   }
+
+  .navbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // left side
+    .left {
+
+    }
+
+    // right side
+    .right {
+      .header-item {
+        .dropdown-toggle-btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: transparent;
+          &:hover {
+            background-color: #f3f6f9;
+          }
+        }
+        .dropdown-menu {
+          padding: 0;
+          .dropdown-item {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 10px;
+
+            padding: 8px 20px;
+            transition: 0.3s;
+            &:hover {
+              background-color: #f3f6f9;
+            }
+
+            span {
+              font-size: .8rem;
+              font-weight: 400;
+              color: var(--dark-color);
+            }
+          }
+        }
+      }
+    }
+  }
 }
