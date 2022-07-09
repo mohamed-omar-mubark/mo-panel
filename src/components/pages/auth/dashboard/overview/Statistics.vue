@@ -1,7 +1,7 @@
 <template>
   <section class='statistics'>
     <div class="row">
-      <div class="col-xl-3 col-md-6 col-sm-12">
+      <div class="col-xl-3 col-md-6 col-sm-6 col-12">
         <div class="statistics-box">
           <div class="title">
             <span class="name">{{ $t('total_earnings') }}</span>
@@ -19,7 +19,7 @@
         </div>
       </div>
 
-      <div class="col-xl-3 col-md-6 col-sm-12">
+      <div class="col-xl-3 col-md-6 col-sm-6 col-12">
         <div class="statistics-box">
           <div class="title">
             <span class="name">{{ $t('orders') }}</span>
@@ -37,7 +37,7 @@
         </div>
       </div>
 
-      <div class="col-xl-3 col-md-6 col-sm-12">
+      <div class="col-xl-3 col-md-6 col-sm-6 col-12">
         <div class="statistics-box">
           <div class="title">
             <span class="name">{{ $t('customers') }}</span>
@@ -55,7 +55,7 @@
         </div>
       </div>
 
-      <div class="col-xl-3 col-md-6 col-sm-12">
+      <div class="col-xl-3 col-md-6 col-sm-6 col-12">
         <div class="statistics-box">
           <div class="title">
             <span class="name">{{ $t('my_balance') }}</span>
