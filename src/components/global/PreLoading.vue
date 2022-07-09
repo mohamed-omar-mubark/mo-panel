@@ -43,7 +43,7 @@ export default {
   width: 100%;
   height: 100%;
   background-color: #fff;
-  z-index: 9999;
+  z-index: 99999;
   display: flex;
   flex-direction: column;
   justify-content: center;

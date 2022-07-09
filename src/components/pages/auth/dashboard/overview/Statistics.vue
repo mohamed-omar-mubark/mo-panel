@@ -11,7 +11,7 @@
             <span>$559.25k</span>
           </div>
           <div class="actions">
-            <router-link class="link" :to="{ name: 'Overview' }">View net earnings</router-link>
+            <router-link class="link" :to="{ name: 'Overview' }">{{ $t('view_net_earnings') }}</router-link>
             <div class="icon">
               <i class="fas fa-dollar-sign"></i>
             </div>
@@ -29,7 +29,7 @@
             <span>36,894</span>
           </div>
           <div class="actions">
-            <router-link class="link" :to="{ name: 'Overview' }">View all orders</router-link>
+            <router-link class="link" :to="{ name: 'Overview' }">{{ $t('view_all_orders') }}</router-link>
             <div class="icon">
               <i class="fas fa-shopping-bag"></i>
             </div>
@@ -47,7 +47,7 @@
             <span>183.35M</span>
           </div>
           <div class="actions">
-            <router-link class="link" :to="{ name: 'Overview' }">See details</router-link>
+            <router-link class="link" :to="{ name: 'Overview' }">{{ $t('see_details') }}</router-link>
             <div class="icon">
               <i class="far fa-user-circle"></i>
             </div>
@@ -65,7 +65,7 @@
             <span>$165.89k</span>
           </div>
           <div class="actions">
-            <router-link class="link" :to="{ name: 'Overview' }">Withdraw money</router-link>
+            <router-link class="link" :to="{ name: 'Overview' }">{{ $t('withdraw_money') }}</router-link>
             <div class="icon">
               <i class="fas fa-wallet"></i>
             </div>
@@ -90,6 +90,10 @@ export default {
     "orders": "Orders",
     "customers": "Customers",
     "my_balance": "MY BALANCE",
+    "view_net_earnings": "View net earnings",
+    "view_all_orders": "View all orders",
+    "see_details": "See details",
+    "withdraw_money": "Withdraw money",
   },
 
   // arabic
@@ -98,6 +102,10 @@ export default {
     "orders": "طلبات",
     "customers": "العملاء",
     "my_balance": "حسابي",
+    "view_net_earnings": "عرض الأرباح الصافية",
+    "view_all_orders": "عرض جميع الطلبات",
+    "see_details": "عرض التفاصيل",
+    "withdraw_money": "سحب المال",
   }
 }
 </i18n>

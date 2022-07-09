@@ -9,6 +9,7 @@
 
         <!-- right contains (change language, notifications and user actions) -->
         <div class="right">
+          <!-- change language -->
           <div class="dropdown header-item">
             <button type="button" class="dropdown-toggle-btn" :title="$t('change_language')" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <img id="header-lang-img" src="@/assets/images/flags/en.svg" :alt="$t('Languages')" width="20" height="20" class="rounded">
@@ -25,7 +26,7 @@
                 <span>{{ $t('arabic') }}</span>
               </a>
             </div>
-        </div>
+          </div>
         </div>
       </div>
     </div>

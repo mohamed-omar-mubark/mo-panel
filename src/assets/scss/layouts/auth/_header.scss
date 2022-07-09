@@ -11,8 +11,16 @@ Header
   transition: 0.3s;
   z-index: 999;
   left: 70px;
+  [dir=rtl] & {
+    left: 0;
+    right: 70px;
+  }
   @media (min-width: 768px) {
     left: 250px;
+    [dir=rtl] & {
+      left: 0;
+      right: 250px;
+    }
   }
   
   // sticky header

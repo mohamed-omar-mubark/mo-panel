@@ -138,6 +138,10 @@ Sidebar
                 .submenu-link {
                   position: relative;
                   padding-left: 20px;
+                  [dir=rtl] & {
+                    padding-left: 0;
+                    padding-right: 20px;
+                  }
                   // submenu link icon
                   &::before {
                     position: absolute;
@@ -145,6 +149,10 @@ Sidebar
                     top: 50%;
                     transform: translateY(-50%);
                     left: 0;
+                    [dir=rtl] & {
+                      left: auto;
+                      right: 0;
+                    }
                     width: 6px;
                     height: 2px;
                     background-color: #abb9e8;
