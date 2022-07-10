@@ -1,12 +1,24 @@
 <template>
   <main class='dashboard'>
-    <!-- Header -->
-    <Header />
-
     <!-- Sidebar -->
-    <Sidebar />
+    <v-navigation-drawer
+      v-model="drawer"
+      app
+      class=""
+    >
+      <Sidebar />
+    </v-navigation-drawer>
+
+    <!-- Header -->
+    <v-app-bar app>
+      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+      <Header />
+    </v-app-bar>
+
     <!-- dashboard views -->
-    <router-view class="dashboard-views"></router-view>
+    <v-main>
+      <router-view class="dashboard-views"></router-view>
+    </v-main>
   </main>
 </template>
 
@@ -21,6 +33,11 @@ export default {
   components: {
     Header,
     Sidebar,
+  },
+  data() {
+    return {
+      drawer: null
+    };
   },
 };
 </script>

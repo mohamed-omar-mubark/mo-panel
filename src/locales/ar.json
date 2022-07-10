@@ -1,3 +1,48 @@
 {
-  "message": "مرحبا بك"
+  "message": "مرحبا بك",
+  
+  "login": "تسجيل الدخول",
+  
+  "premium_admin_dashboard": "لوحة تحكم مميزة",
+  "welcome_message": "مرحبا بك !",
+  "sign_in_message": "تسجيل الدخول للمتابعة إلى MO Panel.",
+  "email": "البريد الإلكتروني",
+  "email_placeholder": "أدخل بريدك الإلكتروني",
+  "password": "كلمة المرور",
+  "password_placeholder": "أدخل كلمة المرور",
+  "sign_in": "تسجيل الدخول",
+  "copyright": "© 2022 MO Panel. مصمم بحب بواسطة",
+  "mohamed_omar": "محمد عمر",
+
+  "overview_statistics": "إحصائيات الملف الشخصي",
+
+  "total_earnings": "إجمالي الأرباح",
+  "orders": "طلبات",
+  "customers": "العملاء",
+  "my_balance": "حسابي",
+  "view_net_earnings": "عرض الأرباح الصافية",
+  "view_all_orders": "عرض جميع الطلبات",
+  "see_details": "عرض التفاصيل",
+  "withdraw_money": "سحب المال",
+
+  "header": "الرئيسية",
+
+  "Languages": "اللغات",
+  "change_language": "تغيير اللغة",
+  "english": "الإنجليزية",
+  "arabic": "العربية",
+
+  "sidebar": "القائمة الجانبية",
+
+  "menu": "القائمة",
+  "dashboard": "لوحة التحكم",
+  "analytics": "الأحصائيات",
+  "ecommerce": "التجارة الإلكترونية",
+
+  "right-side": "جانب اليمين",
+  "top_categories": "الفئات الرئيسية",
+  "mobile": "الاجهزة المحمولة",
+  "desktop": "الأجهزة المكتبية",
+  "electronics": "الإلكترونيات",
+  "home_furniture": "الأثاث المنزلي"
 }

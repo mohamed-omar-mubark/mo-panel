@@ -7,7 +7,7 @@
         </div>
 
         <div class="col-auto">
-          test right side
+          <RightSide />
         </div>
       </div>
     </div>
@@ -17,10 +17,13 @@
 <script>
 // import statistics component
 import Statistics from '@/components/pages/auth/dashboard/overview/Statistics.vue';
+// import right side component
+import RightSide from '@/components/pages/auth/dashboard/overview/RightSide.vue';
 export default {
   name: 'Overview',
   components: {
     Statistics,
+    RightSide,
   },
 };
 </script>

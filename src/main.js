@@ -1,22 +1,17 @@
-import { createApp } from 'vue';
-import App from './App.vue';
-import router from './router';
-import store from './store';
-import i18n from './i18n';
-
-const vueApp = createApp(App);
+import Vue from "vue";
+import App from "./App.vue";
+import router from "./router";
+import store from "./store";
+import i18n from "./i18n";
+import vuetify from "./plugins/vuetify";
 
 // Bootstrap
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-// Notification
-import Notifications from '@kyvg/vue3-notification';
-vueApp.use(Notifications);
-
 // Particles.js
 import VueParticles from 'vue-particles';
-vueApp.use(VueParticles);
+Vue.use(VueParticles);
 
 // Font Awesome
 import '@fortawesome/fontawesome-free/css/all.css';
@@ -28,4 +23,12 @@ import 'normalize.css';
 // Scss
 import './assets/scss/app.scss';
 
-vueApp.use(i18n).use(store).use(router).mount('#app');
+Vue.config.productionTip = false;
+
+new Vue({
+  router,
+  store,
+  i18n,
+  vuetify,
+  render: (h) => h(App),
+}).$mount("#app");

@@ -1,17 +1,16 @@
 const { defineConfig } = require("@vue/cli-service");
 module.exports = defineConfig({
-  transpileDependencies: true,
+  transpileDependencies: ["vuetify"],
   lintOnSave: false,
 
   pluginOptions: {
     i18n: {
       locale: "en",
-      fallbackLocale: "en",
+      fallbackLocale: "ar",
       localeDir: "locales",
-      enableLegacy: true,
-      runtimeOnly: false,
-      compositionOnly: true,
-      fullInstall: true,
+      enableInSFC: true,
+      includeLocales: false,
+      enableBridge: true,
     },
   },
 });

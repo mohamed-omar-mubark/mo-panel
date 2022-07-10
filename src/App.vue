@@ -1,14 +1,12 @@
 <template>
-  <div id="app">
-    <!-- PreLoading -->
+  <v-app>
+    <!-- preLoading -->
     <PreLoading />
     <!-- app views -->
     <router-view />
-    <!-- notification -->
-    <notifications position="bottom right" />
     <!-- settings -->
     <Settings />
-  </div>
+  </v-app>
 </template>
 
 <script>
@@ -18,6 +16,7 @@ import PreLoading from '@/components/global/PreLoading.vue';
 import Settings from '@/components/global/Settings.vue';
 
 export default {
+  name: "App",
   components: {
     PreLoading,
     Settings
@@ -45,5 +44,5 @@ export default {
       document.querySelector('body').setAttribute('dir', 'ltr');
     }
   },
-}
+};
 </script>

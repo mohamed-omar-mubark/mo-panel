@@ -82,34 +82,6 @@ export default {
 };
 </script>
 
-<i18n>
-{
-  // english
-  "en": {
-    "total_earnings": "TOTAL EARNINGS",
-    "orders": "Orders",
-    "customers": "Customers",
-    "my_balance": "MY BALANCE",
-    "view_net_earnings": "View net earnings",
-    "view_all_orders": "View all orders",
-    "see_details": "See details",
-    "withdraw_money": "Withdraw money",
-  },
-
-  // arabic
-  "ar": {
-    "total_earnings": "إجمالي الأرباح",
-    "orders": "طلبات",
-    "customers": "العملاء",
-    "my_balance": "حسابي",
-    "view_net_earnings": "عرض الأرباح الصافية",
-    "view_all_orders": "عرض جميع الطلبات",
-    "see_details": "عرض التفاصيل",
-    "withdraw_money": "سحب المال",
-  }
-}
-</i18n>
-
 <style lang='scss' scoped>
 @import '@/assets/scss/pages/auth/dashboard/dashboard-views/overview/_statistics.scss';
 </style>

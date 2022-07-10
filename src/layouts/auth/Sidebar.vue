@@ -70,24 +70,6 @@ export default {
 };
 </script>
 
-<i18n>
-{
-  // english
-  "en": {
-    "menu": "Menu",
-    "dashboard": "Dashboard",
-    "ecommerce": "Ecommerce",
-  },
-
-  // arabic
-  "ar": {
-    "menu": "القائمة",
-    "dashboard": "لوحة التحكم",
-    "ecommerce": "التجارة الإلكترونية",
-  }
-}
-</i18n>
-
 <style lang='scss' scoped>
 @import '@/assets/scss/layouts/auth/_sidebar.scss';
 </style>

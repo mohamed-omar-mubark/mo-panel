@@ -1,3 +1,48 @@
 {
-  "message": "Welcome back"
+  "message": "Welcome back",
+  
+  "login": "Login",
+  
+  "premium_admin_dashboard": "Premium Admin & Dashboard Template",
+  "welcome_message": "Welcome Back !",
+  "sign_in_message": "Sign in to continue to MO Panel.",
+  "email": "Email",
+  "email_placeholder": "Enter your email",
+  "password": "Password",
+  "password_placeholder": "Enter your password",
+  "sign_in": "Sign In",
+  "copyright": "© 2022 MO Panel. Crafted with love by",
+  "mohamed_omar": "Mohamed Omar",
+
+  "overview_statistics": "Overview Statistics",
+
+  "total_earnings": "TOTAL EARNINGS",
+  "orders": "Orders",
+  "customers": "Customers",
+  "my_balance": "MY BALANCE",
+  "view_net_earnings": "View net earnings",
+  "view_all_orders": "View all orders",
+  "see_details": "See details",
+  "withdraw_money": "Withdraw money",
+
+  "header": "Header",
+
+  "Languages": "Languages",
+  "change_language": "Change language",
+  "english": "English",
+  "arabic": "Arabic",
+
+  "sidebar": "Sidebar",
+
+  "menu": "Menu",
+  "dashboard": "Dashboard",
+  "analytics": "Analytics",
+  "ecommerce": "Ecommerce",
+
+  "right-side": "Right Side",
+  "top_categories": "Top 10 Categories",
+  "mobile": "Mobile & Accessories",
+  "desktop": "Desktop",
+  "electronics": "Electronics",
+  "home_furniture": "Home & Furniture"
 }

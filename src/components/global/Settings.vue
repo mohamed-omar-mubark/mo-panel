@@ -1,24 +1,26 @@
 <template>
-  <button class='settings' type="button" data-bs-toggle="offcanvas" data-bs-target="#settings-offcanvas" aria-controls="settings-offcanvas">
-    <i class="fas fa-cog"></i>
-  </button>
-  <!-- settings offcanvas -->
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="settings-offcanvas" aria-labelledby="settings-offcanvasLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="settings-offcanvasLabel">Offcanvas</h5>
-      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      <div class="change-language mb-2">
-        <select v-model="$i18n.locale" @change="changeLanguage($event)">
-          <option
-            v-for="langnguage in languages"
-            :key="langnguage"
-            :value="langnguage">
-            {{ langnguage }}
-          </option>
-        </select>
-      </div>  
+  <div>
+    <button class='settings' type="button" data-bs-toggle="offcanvas" data-bs-target="#settings-offcanvas" aria-controls="settings-offcanvas">
+      <i class="fas fa-cog"></i>
+    </button>
+    <!-- settings offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="settings-offcanvas" aria-labelledby="settings-offcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="settings-offcanvasLabel">Offcanvas</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="change-language mb-2">
+          <select v-model="$i18n.locale" @change="changeLanguage($event)">
+            <option
+              v-for="langnguage in languages"
+              :key="langnguage"
+              :value="langnguage">
+              {{ langnguage }}
+            </option>
+          </select>
+        </div>  
+      </div>
     </div>
   </div>
 </template>

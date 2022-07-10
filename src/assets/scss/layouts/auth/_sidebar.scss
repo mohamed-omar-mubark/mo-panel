@@ -8,10 +8,7 @@ Sidebar
   bottom: 0;
   background-color: var(--main-color);
   z-index: 9999;
-  width: 70px;
-  @media (min-width: 768px) {
-    width: 250px;
-  }
+  width: 100%;
   // brand logo
   .brand {
     text-align: center;
@@ -30,6 +27,7 @@ Sidebar
       position: relative;
       height: 100% !important;
       overflow: auto;
+      padding: 0;
       li {
         // category title
         &.category-name {
