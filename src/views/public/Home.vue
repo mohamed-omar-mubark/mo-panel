@@ -12,7 +12,7 @@ export default {
   },
   created() {
     // redirect to login
-    // this.$router.push({ name: "Login" });
+    this.$router.push({ name: "Login" });
   },
 };
 </script>
