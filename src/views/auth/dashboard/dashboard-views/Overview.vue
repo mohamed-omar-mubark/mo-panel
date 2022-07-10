@@ -10,7 +10,7 @@
             </div>
 
             <div class="col">
-              right
+              <TopSellers />
             </div>
           </div>
         </div>
@@ -28,6 +28,8 @@
 import Statistics from '@/components/pages/auth/dashboard/overview/Statistics.vue';
 // import best selling
 import BestSelling from '@/components/pages/auth/dashboard/overview/BestSelling.vue';
+// import top sellers
+import TopSellers from '@/components/pages/auth/dashboard/overview/TopSellers.vue';
 // import right side component
 import RightSide from '@/components/pages/auth/dashboard/overview/RightSide.vue';
 export default {
@@ -35,6 +37,7 @@ export default {
   components: {
     Statistics,
     BestSelling,
+    TopSellers,
     RightSide,
   },
 };

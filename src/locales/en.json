@@ -15,7 +15,6 @@
   "mohamed_omar": "Mohamed Omar",
 
   "overview_statistics": "Overview Statistics",
-
   "total_earnings": "TOTAL EARNINGS",
   "orders": "Orders",
   "customers": "Customers",
@@ -25,15 +24,10 @@
   "see_details": "See details",
   "withdraw_money": "Withdraw money",
 
-  "header": "Header",
-
-  "Languages": "Languages",
-  "change_language": "Change language",
-  "english": "English",
-  "arabic": "Arabic",
+  "best_selling": "Best Selling Products",
+  "top_sellers": "Top Sellers",
 
   "sidebar": "Sidebar",
-
   "menu": "Menu",
   "dashboard": "Dashboard",
   "analytics": "Analytics",

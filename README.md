@@ -1,4 +1,23 @@
-# mo-panel
+# Mo Panel
+
+### Screenshot
+<!-- ![Mo Panel screenshot](src/assets/images/screenshots/mo-panel.png) -->
+
+## Description
+```
+Mo Panel is an admin dashboard template built with Vue 2, vuetify v2.6.7, Bootstrap v5.1.3.
+ You can build any type of web application like eCommerce, admin panels etc using Mo Panel.
+```
+
+### What is Mo Panel?
+```
+Mo Panel is an admin dashboard template.
+```
+
+### Why should I use Mo Panel?
+```
+You can build any type of web application like eCommerce, admin panels etc using Mo Panel.
+```
 
 ## Project setup
 ```
