@@ -5,6 +5,13 @@
         <div class="col">
           <Statistics />
           <div class="row">
+            <div class="col-8">
+              <RevenueChart />
+            </div>
+            
+            <div class="col-auto">Sales by locations</div>
+          </div>
+          <div class="row">
             <div class="col">
               <BestSelling />
             </div>
@@ -31,6 +38,8 @@
 <script>
 // import statistics component
 import Statistics from '@/components/pages/auth/dashboard/overview/Statistics.vue';
+// import revenue chart component
+import RevenueChart from '@/components/pages/auth/dashboard/overview/RevenueChart.vue';
 // import best selling
 import BestSelling from '@/components/pages/auth/dashboard/overview/BestSelling.vue';
 // import top sellers
@@ -43,6 +52,7 @@ export default {
   name: 'Overview',
   components: {
     Statistics,
+    RevenueChart,
     BestSelling,
     TopSellers,
     VisitsSource,
