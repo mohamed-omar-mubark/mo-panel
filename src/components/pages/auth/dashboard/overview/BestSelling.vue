@@ -6,7 +6,7 @@
     <v-data-table
       height="530"
       :headers="headers"
-      :items="desserts"
+      :items="products"
       item-key="id"
       class="elevation-1"
       item-class="best-selling-item"
@@ -25,7 +25,7 @@ export default {
   name: 'BestSelling',
   data() {
     return {
-      desserts: [
+      products: [
         {
           id: 1,
           image: 'https://themesbrand.com/velzon/html/default/assets/images/products/img-1.png',

@@ -1,0 +1,45 @@
+<template>
+  <section class='visits-source'>
+    <div class="table-title">
+      <span>{{ $t('visits_source') }}</span>
+    </div>
+    <div id="chart" class="p-3">
+      <apexchart type="donut" :options="chartOptions" :series="series"></apexchart>
+    </div>
+  </section>
+</template>
+
+<script>
+export default {
+  name: 'VisitsSource',
+  data() {
+    return {
+      series: [25.6, 32.0, 23.8, 9.9, 8.7],
+      chartOptions: {
+        chart: {
+          type: 'donut',
+        },
+        labels: ['Direct', 'Social', 'Email', 'Other', 'Referral'],
+        legend: {
+          position: 'bottom',
+        },
+        responsive: [{
+          breakpoint: 480,
+          options: {
+            chart: {
+              width: 200
+            },
+            legend: {
+              position: 'bottom',
+            }
+          }
+        }]
+      }
+    }
+  }
+};
+</script>
+
+<style lang='scss' scoped>
+@import '@/assets/scss/pages/auth/dashboard/dashboard-views/overview/_visits-source.scss';
+</style>

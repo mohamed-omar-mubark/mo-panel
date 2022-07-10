@@ -17,6 +17,11 @@ Vue.use(VueParticles);
 import '@fortawesome/fontawesome-free/css/all.css';
 import '@fortawesome/fontawesome-free/js/all.js';
 
+// ApexCharts
+import VueApexCharts from 'vue-apexcharts';
+Vue.use(VueApexCharts);
+Vue.component('apexchart', VueApexCharts);
+
 // Normalize
 import 'normalize.css';
 

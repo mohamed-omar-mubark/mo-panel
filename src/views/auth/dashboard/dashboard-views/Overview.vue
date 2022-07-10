@@ -13,6 +13,11 @@
               <TopSellers />
             </div>
           </div>
+          <div class="row">
+            <div class="col-auto">
+              <VisitsSource />
+            </div>
+          </div>
         </div>
 
         <div class="col-auto">
@@ -30,6 +35,8 @@ import Statistics from '@/components/pages/auth/dashboard/overview/Statistics.vu
 import BestSelling from '@/components/pages/auth/dashboard/overview/BestSelling.vue';
 // import top sellers
 import TopSellers from '@/components/pages/auth/dashboard/overview/TopSellers.vue';
+// import visits source
+import VisitsSource from '@/components/pages/auth/dashboard/overview/VisitsSource.vue';
 // import right side component
 import RightSide from '@/components/pages/auth/dashboard/overview/RightSide.vue';
 export default {
@@ -38,6 +45,7 @@ export default {
     Statistics,
     BestSelling,
     TopSellers,
+    VisitsSource,
     RightSide,
   },
 };

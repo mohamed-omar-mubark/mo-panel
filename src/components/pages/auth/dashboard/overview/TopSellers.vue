@@ -6,7 +6,7 @@
     <v-data-table
       height="530"
       :headers="headers"
-      :items="desserts"
+      :items="sellers"
       item-key="id"
       class="elevation-1"
       item-class="best-selling-item"
@@ -25,7 +25,7 @@ export default {
   name: 'TopSellers',
   data() {
     return {
-      desserts: [
+      sellers: [
         {
           id: 1,
           image: 'https://themesbrand.com/velzon/html/default/assets/images/companies/img-1.png',
@@ -67,7 +67,7 @@ export default {
           amount: "2.982 $",
         },
         {
-          id: 1,
+          id: 6,
           image: 'https://themesbrand.com/velzon/html/default/assets/images/companies/img-1.png',
           name: 'Nike',
           topic: "Shoes",
@@ -75,7 +75,7 @@ export default {
           amount: "1.798 $",
         },
         {
-          id: 2,
+          id: 7,
           image: 'https://themesbrand.com/velzon/html/default/assets/images/companies/img-2.png',
           name: 'Seddeq',
           topic: "Fast Food",
@@ -83,7 +83,7 @@ export default {
           amount: "2.982 $",
         },
         {
-          id: 3,
+          id: 8,
           image: 'https://themesbrand.com/velzon/html/default/assets/images/companies/img-3.png',
           name: 'Addidas',
           topic: "Fashion",
@@ -91,7 +91,7 @@ export default {
           amount: "1.120 $",
         },
         {
-          id: 4,
+          id: 9,
           image: 'https://themesbrand.com/velzon/html/default/assets/images/companies/img-8.png',
           name: 'Nafees',
           topic: "Watches",
@@ -99,7 +99,7 @@ export default {
           amount: "1.798 $",
         },
         {
-          id: 5,
+          id: 10,
           image: 'https://themesbrand.com/velzon/html/default/assets/images/companies/img-5.png',
           name: 'iTest Factory',
           topic: "Electronics",
