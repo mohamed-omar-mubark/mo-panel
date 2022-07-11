@@ -1,11 +1,7 @@
 <template>
   <main class='dashboard'>
     <!-- Sidebar -->
-    <v-navigation-drawer
-      v-model="drawer"
-      app
-      class=""
-    >
+    <v-navigation-drawer v-model="drawer" app>
       <Sidebar />
     </v-navigation-drawer>
 

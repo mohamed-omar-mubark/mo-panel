@@ -3,7 +3,7 @@
     <div class="table-title">
       <span>{{ $t('revenue') }}</span>
     </div>
-    <div id="chart">
+    <div class="chart" id="chart">
       <apexchart type="line" height="350" :options="chartOptions" :series="series"></apexchart>
     </div>
   </section>
@@ -15,27 +15,25 @@ export default {
   data() {
     return {
       series: [{
-        name: 'TEAM A',
+        name: 'Earnings',
         type: 'column',
-        data: [23, 11, 22, 27, 13, 22, 37, 21, 44, 22, 30]
+        data: [89, 98, 68, 108, 77, 84, 51, 28, 92, 42, 88, 55]
       }, {
-        name: 'TEAM B',
+        name: 'Orders',
         type: 'area',
-        data: [44, 55, 41, 67, 22, 43, 21, 41, 56, 27, 43]
+        data: [30, 60, 50, 60, 50, 58, 40, 45, 78, 52, 63, 35]
       }, {
-        name: 'TEAM C',
+        name: 'Refunds',
         type: 'line',
-        data: [30, 25, 36, 30, 45, 35, 64, 52, 59, 36, 39]
+        data: [8, 11, 7, 15, 20, 10, 5, 15, 6, 30, 15, 25]
       }],
       chartOptions: {
-        chart: {
-          height: 350,
-          type: 'line',
-          stacked: false,
-        },
+        colors: ['#0ab39c', '#405189', '#f06548'],
         stroke: {
-          width: [0, 2, 5],
-          curve: 'smooth'
+          width: [0, 2, 2],
+          curve: ['smooth', 'straight', 'straight'],
+          colors: ['#0ab39c', '#405189', '#f06548'],
+          dashArray: [0, 0, 8]
         },
         plotOptions: {
           bar: {
@@ -44,7 +42,7 @@ export default {
         },
         
         fill: {
-          opacity: [0.85, 0.25, 1],
+          opacity: [0.85, 0.1, 1],
           gradient: {
             inverseColors: false,
             shade: 'light',
@@ -54,20 +52,12 @@ export default {
             stops: [0, 100, 100, 100]
           }
         },
-        labels: ['01/01/2021', '02/01/2021', '03/01/2021', '04/01/2021', '05/01/2021', '06/01/2021', '07/01/2021',
-          '08/01/2021', '09/01/2021', '10/01/2021', '11/01/2021'
-        ],
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
         markers: {
           size: 0
         },
         xaxis: {
-          type: 'datetime'
-        },
-        yaxis: {
-          title: {
-            text: 'Points',
-          },
-          min: 0
+          type: 'category'
         },
         tooltip: {
           shared: true,
@@ -75,7 +65,7 @@ export default {
           y: {
             formatter: function (y) {
               if (typeof y !== "undefined") {
-                return y.toFixed(0) + " points";
+                return y.toFixed(0) + " $";
               }
               return y;
         

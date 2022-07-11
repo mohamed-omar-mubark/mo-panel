@@ -37,7 +37,7 @@ Login
   .bottom {
     position: relative;
     height: 60%;
-    background-color: #f3f3f9;
+    background-color: var(--sky-bg);
 
     &::before {
       position: absolute;
@@ -46,7 +46,7 @@ Login
       height: 200px;
       top: -55px;
       left: 0;
-      background-color: #f3f3f9;
+      background-color: var(--sky-bg);
       transform: skewY(8deg);
     }
 
@@ -57,7 +57,7 @@ Login
       height: 200px;
       top: -55px;
       right: 0;
-      background-color: #f3f3f9;
+      background-color: var(--sky-bg);
       transform: skewY(-8deg);
     }
 

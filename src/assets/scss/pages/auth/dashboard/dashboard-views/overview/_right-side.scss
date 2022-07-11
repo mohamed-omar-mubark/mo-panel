@@ -5,23 +5,33 @@ Right side
 .right-side {
   background-color: #fff;
   padding: 20px 16px 16px;
-  width: 280px;
+  width: 250px;
   min-height: 100vh;
   display: none;
   @media (min-width: 992px) {
     display: block;
   }
 
-  .top-categories {
-    .section-title {
-      display: block;
-      font-size: .8125rem;
-      font-weight: 600;
-      color: var(--secondary-color);
-      text-transform: uppercase;
-      margin-bottom: 10px;
-    }
+  // global
+  .section-title {
+    display: block;
+    font-size: .8125rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
 
+  .section-subtitle {
+    display: block;
+    font-size: .8125rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+  }
+
+  // top categories
+  .top-categories {
     ul {
       padding: 0;
       li {
@@ -37,6 +47,84 @@ Right side
             padding: 5px;
           }
         }
+      }
+    }
+  }
+
+  // customer review
+  .customer-review {
+    .rate-card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 16px;
+      border-radius: 4px;
+      background-color: var(--sky-bg);
+
+      .value {
+        font-size: .8125rem;
+        font-weight: 500;
+        color: var(--secondary-color);
+      }
+    }
+  }
+
+  // Total reviews
+  .total-reviews {
+    .review-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+
+      .stars {
+        font-size: .8125rem;
+        font-weight: 500;
+        color: var(--dark-color);
+        min-width: max-content;
+        svg {
+          color: var(--main-color);
+        }
+      }
+
+      .value {
+        font-size: .8125rem;
+        font-weight: 400;
+        color: var(--secondary-color);
+      }
+    }
+  }
+
+  // invite new seller
+  .invite-seller {
+    padding: 16px;
+    border-radius: 4px;
+    background-color: var(--sky-bg);
+    text-align: center;
+
+    img {
+      width: 95px;
+      height: 65px;
+      object-fit: cover;
+    }
+
+    .paragraph {
+      font-size: .8125rem;
+      font-weight: 400;
+      color: var(--main-color);
+    }
+
+    .invite-btn {
+      padding: 10px 20px;
+      border-radius: 4px;
+      background-color: var(--main-color);
+      color: #fff;
+      font-size: .8125rem;
+      font-weight: 500;
+      opacity: .8;
+      &:hover {
+        opacity: 1;
       }
     }
   }
