@@ -19,4 +19,21 @@ Best Selling
       color: var(--dark-color);
     }
   }
+
+  .order-id {
+    font-weight: 500;
+    color: var(--main-color);
+  }
+
+  .order-status {
+    &.paid {
+      color: var(--success-color);
+    }
+    &.pending {
+      color: var(--warning-color);
+    }
+    &.unpaid {
+      color: var(--danger-color);
+    }
+  }
 }

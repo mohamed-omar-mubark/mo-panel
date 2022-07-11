@@ -4,7 +4,7 @@
       <span>{{ $t('visits_source') }}</span>
     </div>
     <div id="chart" class="p-3">
-      <apexchart type="donut" :options="chartOptions" :series="series"></apexchart>
+      <apexchart type="donut" :width="width" height="335" :options="chartOptions" :series="series"></apexchart>
     </div>
   </section>
 </template>
@@ -14,6 +14,7 @@ export default {
   name: 'VisitsSource',
   data() {
     return {
+      width: '500',
       series: [25.6, 32.0, 23.8, 9.9, 8.7],
       chartOptions: {
         chart: {
@@ -25,6 +26,11 @@ export default {
         },
       }
     }
+  },
+  mounted() {
+    setTimeout(() => {
+      this.width = '100%'
+    }, 1) 
   }
 };
 </script>
