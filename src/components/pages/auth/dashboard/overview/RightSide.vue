@@ -78,7 +78,7 @@
         <span class="stars">5 <i class="fas fa-star"></i></span>
         <v-progress-linear
           v-model="five_star"
-          color="indigo darken-2"
+          color="success"
         ></v-progress-linear>
         <span class="value">2536</span>
       </div>
@@ -105,7 +105,7 @@
         <span class="stars">2 <i class="fas fa-star"></i></span>
         <v-progress-linear
           v-model="two_star"
-          color="indigo darken-2"
+          color="amber"
         ></v-progress-linear>
         <span class="value">240</span>
       </div>
@@ -114,7 +114,7 @@
         <span class="stars">1 <i class="fas fa-star"></i></span>
         <v-progress-linear
           v-model="one_star"
-          color="indigo darken-2"
+          color="pink"
         ></v-progress-linear>
         <span class="value">113</span>
       </div>

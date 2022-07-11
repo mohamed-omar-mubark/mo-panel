@@ -5,8 +5,9 @@ Right side
 .right-side {
   background-color: #fff;
   padding: 20px 16px 16px;
+  margin-top: 20px;
   width: 250px;
-  min-height: 100vh;
+  height: 100%;
   display: none;
   @media (min-width: 992px) {
     display: block;
@@ -77,6 +78,8 @@ Right side
       justify-content: space-between;
       align-items: center;
       gap: 10px;
+
+      margin-bottom: 10px;
 
       .stars {
         font-size: .8125rem;
