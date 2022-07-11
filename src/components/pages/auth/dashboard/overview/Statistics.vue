@@ -1,6 +1,21 @@
 <template>
   <section class='statistics'>
     <div class="row">
+      <div class="welcome-admin">
+        <div class="text">
+          <span class="welcome-message">{{ $t('good_morning') }}</span>
+          <p>{{ $t('welcome_paragraph') }}</p>
+        </div>
+
+        <div class="actions">
+          <button class="add-product">
+            <i class="fas fa-plus-circle"></i>
+            <span>{{ $t('add_product') }}</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
       <div class="col-xl-3 col-md-6 col-sm-6 col-12">
         <div class="statistics-box">
           <div class="title">

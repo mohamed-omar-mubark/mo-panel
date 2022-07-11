@@ -1,5 +1,9 @@
 {
   "message": "مرحبا بك",
+
+  "good_morning": "صباح الخير",
+  "welcome_paragraph": "إليك ما يحدث مع متجرك اليوم.",
+  "add_product": "أضف منتج",
   
   "login": "تسجيل الدخول",
   "premium_admin_dashboard": "لوحة تحكم مميزة",
