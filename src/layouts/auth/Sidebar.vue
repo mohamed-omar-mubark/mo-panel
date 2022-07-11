@@ -31,14 +31,6 @@
             <!-- submenu item -->
             <li class="submenu-item">
               <!-- submenu link -->
-              <router-link :to="{ name: 'Overview' }" class="submenu-link">
-                <span class="text">{{ $t('analytics') }}</span>
-              </router-link>
-            </li>
-
-            <!-- submenu item -->
-            <li class="submenu-item">
-              <!-- submenu link -->
               <router-link :to="{ name: 'Overview' }" :class="$route.name === 'Overview' ? 'submenu-link active' : 'submenu-link'">
                 <span class="text">{{ $t('ecommerce') }}</span>
               </router-link>
@@ -54,8 +46,8 @@
           <!-- main menu link -->
           <div class="main-menu-link">
             <div class="content">
-              <i class="fas fa-rocket"></i>
-              <span class="text">{{ $t('Apps') }}</span>
+              <i class="far fa-window-restore"></i>
+              <span class="text">{{ $t('Pages') }}</span>
             </div>
             <!-- arrow -->
             <div class="arrow">
@@ -69,29 +61,10 @@
             <li class="submenu-item">
               <!-- submenu link -->
               <router-link :to="{ name: 'Overview' }" class="submenu-link">
-                <span class="text">{{ $t('analytics') }}</span>
-              </router-link>
-            </li>
-
-            <!-- submenu item -->
-            <li class="submenu-item">
-              <!-- submenu link -->
-              <router-link :to="{ name: 'Overview' }" :class="$route.name === 'Dashboard' ? 'submenu-link active' : 'submenu-link'">
-                <span class="text">{{ $t('ecommerce') }}</span>
+                <span class="text">{{ $t('Order page') }}</span>
               </router-link>
             </li>
           </ul>
-        </li>
-
-        <!-- main menu item -->
-        <li :class="$route.name === 'Home' ? 'main-menu-item active' : 'main-menu-item'">
-          <!-- main menu link -->
-          <div class="main-menu-link">
-            <div class="content">
-              <i class="fas fa-th-large"></i>
-              <span class="text">{{ $t('Components') }}</span>
-            </div>
-          </div>
         </li>
       </ul>
     </div>

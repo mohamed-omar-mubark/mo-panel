@@ -4,7 +4,7 @@
       <span>{{ $t('visits_source') }}</span>
     </div>
     <div id="chart" class="p-3">
-      <apexchart type="donut" :width="width" height="335" :options="chartOptions" :series="series"></apexchart>
+      <apexchart type="donut" :width="width" height="347" :options="chartOptions" :series="series"></apexchart>
     </div>
   </section>
 </template>

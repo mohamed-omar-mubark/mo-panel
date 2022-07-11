@@ -2,7 +2,6 @@
   "message": "Welcome back",
   
   "login": "Login",
-  
   "premium_admin_dashboard": "Premium Admin & Dashboard Template",
   "welcome_message": "Welcome Back !",
   "sign_in_message": "Sign in to continue to MO Panel.",
@@ -30,11 +29,12 @@
   "top_sellers": "Top Sellers",
   "visits_source": "Store Visits by Source",
   "revenue": "Revenue",
+  "sales_by_location": "Sales by Location",
 
   "sidebar": "Sidebar",
   "menu": "Menu",
+  "pages": "Pages",
   "dashboard": "Dashboard",
-  "analytics": "Analytics",
   "ecommerce": "Ecommerce",
 
   "right-side": "Right Side",

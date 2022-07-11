@@ -2,7 +2,6 @@
   "message": "مرحبا بك",
   
   "login": "تسجيل الدخول",
-  
   "premium_admin_dashboard": "لوحة تحكم مميزة",
   "welcome_message": "مرحبا بك !",
   "sign_in_message": "تسجيل الدخول للمتابعة إلى MO Panel.",
@@ -30,11 +29,12 @@
   "top_sellers": "البائعون التميزون",
   "visits_source": "مصادر الزيارات",
   "revenue": "الإيرادات",
+  "sales_by_location": "المبيعات حسب الموقع",
 
   "sidebar": "القائمة الجانبية",
   "menu": "القائمة",
+  "pages": "الصفحات",
   "dashboard": "لوحة التحكم",
-  "analytics": "الأحصائيات",
   "ecommerce": "التجارة الإلكترونية",
 
   "right-side": "جانب اليمين",

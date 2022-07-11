@@ -4,7 +4,7 @@
       <span>{{ $t('revenue') }}</span>
     </div>
     <div class="chart" id="chart">
-      <apexchart type="line" height="350" :options="chartOptions" :series="series"></apexchart>
+      <apexchart type="line" :width="width" height="350" :options="chartOptions" :series="series"></apexchart>
     </div>
   </section>
 </template>
@@ -14,6 +14,7 @@ export default {
   name: 'RevenueChart',
   data() {
     return {
+      width: '500',
       series: [{
         name: 'Earnings',
         type: 'column',
@@ -74,6 +75,11 @@ export default {
         }
       },
     }
+  },
+  mounted() {
+    setTimeout(() => {
+      this.width = '100%'
+    }, 1) 
   }
 };
 </script>
